@@ -1,3 +1,4 @@
+#%%
 from flask import Flask,render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import PrimaryKeyConstraint
@@ -7,9 +8,9 @@ from datetime import datetime
 import string, datetime
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+mysqlconnector://mahmoudnour2:Abdalla2008@db4free.net/wuzzuf_mahmoud'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://mahmoudnour2:myflaskapp@db4free.net:3306/wuzzuf_mahmoud'
 
-db=SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 class Company(db.Model):
     __tablename__ = 'company'
@@ -259,3 +260,4 @@ def query10_results():
 
 if __name__ == '__main__':
     app.run(debug=True)
+# %%
