@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techy Buttons</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .techy-button {
+            border: none;
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .techy-button:hover {
+            color: #fff;
+        }
+
+        .techy-button:nth-child(1) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(2) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(3) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(4) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(5) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(6) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(7) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(8) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(9) {
+            background-color: #3498db;
+        }
+
+        .techy-button:nth-child(10) {
+            background-color: #3498db;
+        }
+        .query_textbox{
+            border: none;
+            padding: 20px 60px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;    
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="form-row">
+            <form action="/query1_results" method="post">
+                <button class="techy-button">Register a user</button>
+                <input type="text" id="query1a_input" name="query1a_input" class="query_textbox" placeholder="Username" required>
+                <input type="text" id="query1b_input" name="query1b_input" class="query_textbox" placeholder="Gender(M or F)" required>
+                <input type="text" id="query1c_input" name="query1c_input" class="query_textbox" placeholder="DOB(YYYY-MM-DD)" required>
+                <input type="text" id="query1d_input" name="query1d_input" class="query_textbox" placeholder="GPA" required>
+                <input type="text" id="query1e_input" name="query1e_input" class="query_textbox" placeholder="Email" required>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query2_results" method="post">
+                <button class="techy-button">Add a new user application for an existing Job posting</button>
+                <input type="text" id="query2a_input" name="query2a_input" class="query_textbox" placeholder="Job Title" required>
+                <input type="text" id="query2b_input" name="query2b_input" class="query_textbox" placeholder="Company Name" required>
+                <input type="text" id="query2c_input" name="query2c_input" class="query_textbox" placeholder="Username" required>
+                <input type="text" id="query2d_input" name="query2d_input" class="query_textbox" placeholder="Cover letter" required>
+
+            </form>
+        </div>
+
+        <div class="form-row">
+            <form action="/query3_results" method="post">
+                <button class="techy-button">Job postings for a given sector</button>
+                <input type="text" id="query3_input" name="query3_input" class="query_textbox" placeholder="Name of Sector" required>
+            </form>
+        </div>
+
+        <div class="form-row">
+            <form action="/query4_results" method="post">
+                <button class="techy-button">Job postings for a given set of skills</button>
+                <input type="text" id="query4_input" name="query4_input" class="query_textbox" placeholder="Skills (comma separated)" required>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query5_results" method="post">
+                <button class="techy-button">Top 5 sectors by number of job posts, and the average salary range for each</button>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query6_results" method="post">
+                <button class="techy-button">Top 5 skills that are in the highest demand</button>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query7_results" method="post">
+                <button class="techy-button">Top 5 growing startups in Egypt by the amount of vacancies they have compared to their foundation date</button>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query8_results" method="post">
+                <button class="techy-button">Top 5 most paying companies in the field in Egypt</button>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query9_results" method="post">
+                <button class="techy-button">Job postings for a given company / organization</button>
+                <input type="text" id="query9_input" name="query9_input" class="query_textbox" placeholder="Name of Company" required>
+            </form>
+        </div>
+        
+        <div class="form-row">
+            <form action="/query10_results" method="post">
+                <button class="techy-button">Top 5 categories (other than IT/Software Development) that the postings are cross listed under based on the volume of postings</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.techy-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.techy-button:hover {
+    background-color: #2980b9;
+}
+
+/* Assigning different colors to each button */
+.techy-button:nth-child(1) {
+    background-color: #2ecc71;
+}
+
+.techy-button:nth-child(2) {
+    background-color: #e74c3c;
+}
+
+.techy-button:nth-child(3) {
+    background-color: #f39c12;
+}
+
+.techy-button:nth-child(4) {
+    background-color: #9b59b6;
+}
+
+.techy-button:nth-child(5) {
+    background-color: #27ae60;
+}
+
+.techy-button:nth-child(6) {
+    background-color: #e67e22;
+}
+
+.techy-button:nth-child(7) {
+    background-color: #3498db;
+}
+
+.techy-button:nth-child(8) {
+    background-color: #d35400;
+}
+
+.techy-button:nth-child(9) {
+    background-color: #c0392b;
+}
+
+.techy-button:nth-child(10) {
+    background-color: #34495e;
+}

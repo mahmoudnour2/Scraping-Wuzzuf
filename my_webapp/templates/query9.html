@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Results</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Query Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Enrollment Status</th>
+                <th>Company Name</th>
+                <th>Open Positions</th>
+                <th>Experience Needed</th>
+                <th>Career Level</th>
+                <th>Education Level</th>
+                <th>Salary</th>
+                <th>Description</th>
+                <th>Job Requirement</th>
+                <th>Min Salary</th>
+                <th>Max Salary</th>
+                <th>Work from Home</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for job in job_postings %}
+                <tr>
+                    <td>{{ job.title }}</td>
+                    <td>{{ job.enrollment_status }}</td>
+                    <td>{{ job.company_name }}</td>
+                    <td>{{ job.open_positions }}</td>
+                    <td>{{ job.experience_needed }}</td>
+                    <td>{{ job.career_level }}</td>
+                    <td>{{ job.education_level }}</td>
+                    <td>{{ job.salary }}</td>
+                    <td>{{ job.description }}</td>
+                    <td>{{ job.job_requirment }}</td>
+                    <td>{{ job.min_salary }}</td>
+                    <td>{{ job.max_salary }}</td>
+                    <td>{{ job.work_from_home }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
