@@ -1,4 +1,3 @@
-#%%
 from flask import Flask,render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import PrimaryKeyConstraint
@@ -259,5 +258,4 @@ def query10_results():
     return render_template('query10.html', categories=results)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-# %%
+    app.run(debug=True, port=5000)
