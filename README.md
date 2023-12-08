@@ -1,2 +1,2 @@
-# Scraping-Wuzzuf
-In this project I scrape Wuzzuf, import the data into a database on an online server, create a website where the user can register to the website, apply to a job at a company, or query some data 
+# Scraping-Wuzzuf.
+In this project I create a web application where the user can search on IT/Software Development job opportunities in Egypt. The data is scraped from the website "Wuzzuf" which has limited abilities for filtering or doing some higher level aggregations on the job market size, top needed skills, and sectors for employment. Hence, this application will be used to provide more flexibility on that front. 
